@@ -5,8 +5,8 @@ import cv2
 import numpy as np
 
 # Use train=False i.e. Testset because of its smaller size (10k vs 60k)
-dataset = torchvision.datasets.MNIST(root="./data",transform=torchvision.transforms.ToTensor(),train=False)
-# dataset = torchvision.datasets.MNIST(root="./data",transform=torchvision.transforms.ToTensor(), download=True,train=False)
+# dataset = torchvision.datasets.MNIST(root="./data",transform=torchvision.transforms.ToTensor(),train=False)
+dataset = torchvision.datasets.MNIST(root="./data",transform=torchvision.transforms.ToTensor(), download=True,train=False)
 
 BATCH_SIZE = 400
 dataLoader = DataLoader(dataset=dataset,batch_size=BATCH_SIZE,shuffle=True)
