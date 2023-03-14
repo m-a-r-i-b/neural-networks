@@ -30,7 +30,7 @@ def gradient(x,y,y_pred):
 
 
 # Only need 40 iterations to converge because loss is very high with multiple inputs => heavier weight updates 
-num_iter = 40
+num_iter = 25
 lr = 0.01
 
 for epoch in range(num_iter):

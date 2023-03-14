@@ -19,7 +19,6 @@ lr = 0.01
 loss = nn.MSELoss()
 optimiser = torch.optim.SGD([W],lr)
 
-# Takes a lot of iterations to converge because we are using a weights array, as opposed to a single weight
 num_iter = 20
 
 for epoch in range(num_iter):

@@ -23,9 +23,9 @@ def loss(y,y_pred):
 
 
 # MSE
-# 1/N * (y_pred - y)**2
-# 1/N * 2*(y_pred-y) * x
-# 1/N * 2*x*(y_pred-y)
+# 1/N * (y_pred - y)**2 * e^x
+# 1/N * 2*(y_pred-y) * x * e^x
+# 1/N * 2*x*(y_pred-y) * e^x
 def gradient(x,y,y_pred,w):
     # Make sure to correctly set precedence of mean(), otherwise mean will be calc first and then multiplied by x
     z = x*w

@@ -33,8 +33,8 @@ for epoch in range(num_iter):
 
     # Reset gradient to zero, to avoid accumulation
     print(f"E: {epoch} , L: {l:.2f}, P: {[round(item.item(),2) for item in model(X)]} ")
-    for param in model.parameters():
-        print(param)
+    # for param in model.parameters():
+    #     print(param)
     print("-----------------------------------------------")
 
     # Reset gradient to zero, to avoid accumulation

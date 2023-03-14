@@ -18,7 +18,6 @@ def loss(y,y_pred):
     return ((y_pred-y)**2).mean()
 
 
-# Takes a lot of iterations to converge because we are using a weights array, as opposed to a single weight
 num_iter = 15
 lr = 0.01
 

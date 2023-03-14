@@ -87,10 +87,10 @@ for iteration ,(images,labels) in enumerate(testDatasetLoader):
     images = images.reshape(-1,28*28)
     predictions = model(images)
 
-    if iteration == 0:
-        print(predictions.data[0])
-        print(torch.max(predictions.data[0],0))
-        print("-"*30)
+    # if iteration == 0:
+    #     print(predictions.data[0])
+    #     print(torch.max(predictions.data[0],0))
+    #     print("-"*30)
     
     # Get max values & their index 
     maxValues, maxValueIndex = torch.max(predictions.data,1)
